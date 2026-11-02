@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="ANLI // ASTRO-SEC — DevSecOps, AppSec, Cloud Security Engineer">
+<defs>
+<style>
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.55;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
+.spin{animation:spin 14s linear infinite}
+.spinr{animation:spin 22s linear infinite reverse}
+.spinf{animation:spin 5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scan{animation:scan 6s linear infinite}
+@keyframes scan{from{transform:translateY(-70px)}to{transform:translateY(430px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{50%{opacity:0}}
+.gl1{animation:gl1 4.5s steps(1) infinite}
+@keyframes gl1{0%,90%,100%{transform:translate(-4px,1px)}92%{transform:translate(-10px,-1px)}94%{transform:translate(3px,2px)}96%{transform:translate(-7px,0)}}
+.gl2{animation:gl2 4.5s steps(1) infinite}
+@keyframes gl2{0%,90%,100%{transform:translate(4px,-1px)}92%{transform:translate(10px,1px)}94%{transform:translate(-3px,-2px)}96%{transform:translate(7px,0)}}
+.tick{animation:tick 26s linear infinite}
+@keyframes tick{to{transform:translateX(-520px)}}
+.blip{animation:blip 2.4s steps(1) infinite}
+@keyframes blip{0%{opacity:1}50%{opacity:.5}}
+.flame{transform-box:fill-box;transform-origin:top center;animation:flame .25s steps(2) infinite}
+@keyframes flame{0%{transform:scaleY(1)}50%{transform:scaleY(1.7)}}
+.neon{animation:neon 3s ease-in-out infinite}
+@keyframes neon{0%,100%{stroke-opacity:.75}50%{stroke-opacity:1}}
+@media (prefers-reduced-motion:reduce){.pulse,.spin,.spinr,.spinf,.scan,.cur,.gl1,.gl2,.tick,.blip,.flame,.neon{animation:none}}
+</style>
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24,0 H0 V24" fill="none" stroke="#00f0ff" stroke-opacity=".07"/></pattern>
+<pattern id="scl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.4" fill="#000" fill-opacity=".30"/></pattern>
+<pattern id="haz" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="11" height="22" fill="#ff0055"/><rect x="11" width="11" height="22" fill="#07080c"/></pattern>
+<pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#ff0055" stroke-width="1.2" stroke-opacity=".55"/></pattern>
+<linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#b9c4d8"/><stop offset=".5" stop-color="#6c7a94"/><stop offset=".56" stop-color="#dfe6f2"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<radialGradient id="aura" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff0055" stop-opacity=".30"/><stop offset=".6" stop-color="#00f0ff" stop-opacity=".07"/><stop offset="1" stop-color="#07080c" stop-opacity="0"/></radialGradient>
+<linearGradient id="streak" x1="0" x2="1"><stop offset="0" stop-color="#00f0ff" stop-opacity="0"/><stop offset="1" stop-color="#00f0ff" stop-opacity=".85"/></linearGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00f0ff" stop-opacity="0"/><stop offset=".5" stop-color="#00f0ff" stop-opacity=".16"/><stop offset="1" stop-color="#00f0ff" stop-opacity="0"/></linearGradient>
+<linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#ff0055"/><stop offset=".5" stop-color="#00f0ff"/><stop offset="1" stop-color="#00ff66"/></linearGradient>
+<radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glowS" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="frame"><path d="M24,10 L1176,10 L1190,24 L1190,336 L1176,350 L24,350 L10,336 L10,24 Z"/></clipPath>
+<clipPath id="tk"><rect x="226" y="327" width="500" height="18"/></clipPath>
+<g id="half" stroke-linejoin="miter"><path d="M-52,100 C-80,84 -84,46 -60,16 C-46,36 -30,54 -8,78 Z" fill="url(#hatch)" stroke="#00f0ff" stroke-width="1.4"/><path d="M-60,16 C-58,38 -44,58 -26,72" fill="none" stroke="#ff0055" stroke-width="1.2" opacity=".9"/><polygon points="-53,122 -61,126 -61,141 -53,143" fill="#00f0ff" fill-opacity=".12" stroke="#00f0ff" stroke-width="1.2"/><path d="M-34,124 Q-34,106 -21,106 Q-8,106 -8,126 Q-8,148 -21,150 Q-34,148 -34,124 Z" fill="#00f0ff" fill-opacity=".14" stroke="#00f0ff" stroke-width="1.4"/><path d="M-21,109 L-21,147 M-33,128 L-9,128" stroke="#ff0055" stroke-width=".9" opacity=".85" fill="none"/><polygon points="-21,122.5 -15.5,128 -21,133.5 -26.5,128" fill="#ff0055" opacity=".9" class="blip"/><polygon points="-28,112 -25,117 -28,122 -31,117" fill="#e8edf5"/><polygon points="-74,206 -92,214 -112,262 -124,296 -108,300 -92,268 -72,232" fill="#00f0ff" fill-opacity=".06" stroke="#00f0ff" stroke-width="1.4"/><path d="M-92,214 L-84,236 M-112,262 L-92,268 M-86,222 L-98,252" stroke="#00f0ff" stroke-width=".8" opacity=".6" fill="none"/><polygon points="-102,245 -95.9,248.5 -95.9,255.5 -102,259 -108.1,255.5 -108.1,248.5" fill="#07080c" stroke="#ff0055" stroke-width="1.2"/><polygon points="-124,296 -108,300 -106,312 -120,314" fill="#e8edf5" fill-opacity=".15" stroke="#00f0ff" stroke-width="1.2"/><polygon points="-36,298 -14,300 -16,318 -32,318" fill="#00f0ff" fill-opacity=".06" stroke="#00f0ff" stroke-width="1.2"/><polygon points="-40,316 -10,316 -6,344 -48,344" fill="#ff0055" fill-opacity=".88" stroke="#ff0055" stroke-width="1.4" filter="url(#glowS)"/><path d="M-42,326 L-9,326 M-45,336 L-7,336" stroke="#07080c" stroke-width="1.6" fill="none"/><polygon points="-38,344 -26,344 -32,358" fill="#00f0ff" fill-opacity=".85" class="flame"/></g>
+</defs>
+<g clip-path="url(#frame)">
+<rect width="1200" height="360" fill="#07080c"/>
+<polygon points="690,0 1200,0 1200,360 610,360" fill="#11131a"/>
+<rect width="1200" height="360" fill="url(#grid)"/>
+<rect x="640" y="-40" width="520" height="440" fill="url(#aura)"/>
+<text x="330" y="318" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-weight="900" font-size="230" fill="none" stroke="#e8edf5" stroke-opacity=".06" stroke-width="1.2" letter-spacing="-6">鉄腕</text>
+<line x1="812.1" y1="216.7" x2="992.3" y2="151.9" stroke="url(#streak)" stroke-width="1.4" opacity="0.45"/>
+<line x1="920.9" y1="113.2" x2="1085.4" y2="54" stroke="url(#streak)" stroke-width="1.4" opacity="0.53"/>
+<line x1="904.1" y1="86.4" x2="1003.5" y2="50.6" stroke="url(#streak)" stroke-width="1" opacity="0.49"/>
+<line x1="930.4" y1="237.6" x2="1067.8" y2="188.2" stroke="url(#streak)" stroke-width="1.4" opacity="0.68"/>
+<line x1="866.6" y1="232.4" x2="947" y2="203.4" stroke="url(#streak)" stroke-width="1" opacity="0.62"/>
+<line x1="707.1" y1="70" x2="881.4" y2="7.2" stroke="url(#streak)" stroke-width="2" opacity="0.26"/>
+<line x1="815.3" y1="183.3" x2="984.8" y2="122.3" stroke="url(#streak)" stroke-width="2" opacity="0.36"/>
+<line x1="769.4" y1="61.3" x2="840.5" y2="35.7" stroke="url(#streak)" stroke-width="2" opacity="0.38"/>
+<line x1="959.4" y1="338.8" x2="1128.6" y2="277.9" stroke="url(#streak)" stroke-width="2" opacity="0.36"/>
+<line x1="894.7" y1="203.6" x2="958.5" y2="180.6" stroke="url(#streak)" stroke-width="2" opacity="0.59"/>
+<line x1="798.1" y1="297" x2="908.4" y2="257.4" stroke="url(#streak)" stroke-width="1" opacity="0.63"/>
+<line x1="690.1" y1="118.7" x2="868.5" y2="54.5" stroke="url(#streak)" stroke-width="1.4" opacity="0.42"/>
+<line x1="881.4" y1="177.5" x2="1015" y2="129.4" stroke="url(#streak)" stroke-width="1" opacity="0.60"/>
+<line x1="762.8" y1="84.4" x2="866.1" y2="47.2" stroke="url(#streak)" stroke-width="1.4" opacity="0.59"/>
+<line x1="721.9" y1="129" x2="795" y2="102.7" stroke="url(#streak)" stroke-width="1" opacity="0.46"/>
+<line x1="821.4" y1="251" x2="905.9" y2="220.6" stroke="url(#streak)" stroke-width="2" opacity="0.34"/>
+<polygon points="700,340 760,340 1020,40 960,40" fill="#ff0055" opacity=".06"/>
+<g transform="translate(900,0)">
+<g class="spin" style="transform-origin:0px 190px"><path d="M165.4,219.2 A168,168 0 0 1 57.5,347.9 M-108,318.7 A168,168 0 0 1 -165.4,160.8 M-57.5,32.1 A168,168 0 0 1 108,61.3" fill="none" stroke="#ff0055" stroke-width="2.2" stroke-linecap="butt" opacity=".85"/></g>
+<g class="spinr" style="transform-origin:0px 190px"><path d="M150,190 A150,150 0 0 1 -150,190 M-150,190 A150,150 0 0 1 150,190" fill="none" stroke="#00f0ff" stroke-width="1.4" stroke-dasharray="1 7" opacity=".7"/><path d="M-127.8,143.5 A136,136 0 0 1 -46.5,62.2 M127.8,236.5 A136,136 0 0 1 46.5,317.8" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity=".8"/></g>
+<path d="M172,190 L178,190 M169.4,219.9 L175.3,220.9 M161.6,248.8 L167.3,250.9 M149,276 L154.2,279 M131.8,300.6 L136.4,304.4 M110.6,321.8 L114.4,326.4 M86,339 L89,344.2 M58.8,351.6 L60.9,357.3 M29.9,359.4 L30.9,365.3 M0,362 L0,368 M-29.9,359.4 L-30.9,365.3 M-58.8,351.6 L-60.9,357.3 M-86,339 L-89,344.2 M-110.6,321.8 L-114.4,326.4 M-131.8,300.6 L-136.4,304.4 M-149,276 L-154.2,279 M-161.6,248.8 L-167.3,250.9 M-169.4,219.9 L-175.3,220.9 M-172,190 L-178,190 M-169.4,160.1 L-175.3,159.1 M-161.6,131.2 L-167.3,129.1 M-149,104 L-154.2,101 M-131.8,79.4 L-136.4,75.6 M-110.6,58.2 L-114.4,53.6 M-86,41 L-89,35.8 M-58.8,28.4 L-60.9,22.7 M-29.9,20.6 L-30.9,14.7 M-0,18 L-0,12 M29.9,20.6 L30.9,14.7 M58.8,28.4 L60.9,22.7 M86,41 L89,35.8 M110.6,58.2 L114.4,53.6 M131.8,79.4 L136.4,75.6 M149,104 L154.2,101 M161.6,131.2 L167.3,129.1 M169.4,160.1 L175.3,159.1" stroke="#00f0ff" stroke-width="1" opacity=".5" fill="none"/>
+<path d="M172,190 L184,190 M0,362 L0,374 M-172,190 L-184,190 M-0,18 L-0,6" stroke="#ff0055" stroke-width="1.6" fill="none"/>
+<text x="-12" y="3" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8" fill="#00f0ff" opacity=".7">000</text>
+<text x="182" y="193" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8" fill="#00f0ff" opacity=".7">090</text>
+<path d="M-168,226 L168,226 M0,22 L0,358" stroke="#00f0ff" stroke-width=".6" stroke-dasharray="3 5" opacity=".45" fill="none"/>
+<g stroke-linejoin="miter">
+<polygon points="-20,190 -64,197 -76,216 -60,262 -38,272 38,272 60,262 76,216 64,197 20,190" fill="#00f0ff" fill-opacity=".05" stroke="#00f0ff" stroke-width="1.5"/>
+<path d="M-62,212 L-24,222 L-16,244 M62,212 L24,222 L16,244 M-44,256 L44,256 M-40,263 L40,263 M-58,236 L-58,258 M58,236 L58,258" stroke="#00f0ff" stroke-width=".8" opacity=".65" fill="none"/>
+<polygon points="-38,272 38,272 42,296 12,300 0,288 -12,300 -42,296" fill="#07080c" stroke="#ff0055" stroke-width="1.6"/>
+<path d="M-30,278 L30,278 M-26,284 L26,284" stroke="#ff0055" stroke-width=".8" opacity=".6" fill="none"/>
+<path d="M-12,178 L-12,191 M12,178 L12,191" stroke="#00f0ff" stroke-width="1.3" fill="none"/>
+<polygon points="-45,92 45,92 53,128 35,165 0,178 -35,165 -53,128" fill="#e8edf5" fill-opacity=".05" stroke="#00f0ff" stroke-width="1.6"/>
+<polygon points="-50,98 -44,74 -20,64 0,58 20,64 44,74 50,98 25,110 0,100 -25,110" fill="url(#hatch)" stroke="#00f0ff" stroke-width="1.4"/>
+<path d="M-8,158 Q0,163 8,158 M-1,146 L1,151" stroke="#ff0055" stroke-width="1.6" fill="none"/>
+<path d="M-26,168 L-14,160 M26,168 L14,160 M-36,138 L-34,150 M36,138 L34,150" stroke="#00f0ff" stroke-width=".8" opacity=".6" fill="none"/>
+</g>
+<use href="#half"/><use href="#half" transform="scale(-1,1)"/>
+<path d="M-80,20 L-80,8 L-66,8" fill="none" stroke="#ff0055" stroke-width="1.6"/>
+<path d="M-80,176 L-80,188 L-66,188" fill="none" stroke="#ff0055" stroke-width="1.6"/>
+<path d="M80,20 L80,8 L66,8" fill="none" stroke="#ff0055" stroke-width="1.6"/>
+<path d="M80,176 L80,188 L66,188" fill="none" stroke="#ff0055" stroke-width="1.6"/>
+<text x="-78" y="2" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8" fill="#ff0055" font-weight="700">LOCK 99.8%</text>
+<g transform="translate(0,226)">
+<polygon points="0,-32 27.7,-16 27.7,16 0,32 -27.7,16 -27.7,-16" fill="#07080c" stroke="#00f0ff" stroke-width="1.6"/>
+<path d="M25,0 L30,0 M24.1,6.5 L29,7.8 M21.7,12.5 L26,15 M17.7,17.7 L21.2,21.2 M12.5,21.7 L15,26 M6.5,24.1 L7.8,29 M0,25 L0,30 M-6.5,24.1 L-7.8,29 M-12.5,21.7 L-15,26 M-17.7,17.7 L-21.2,21.2 M-21.7,12.5 L-26,15 M-24.1,6.5 L-29,7.8 M-25,0 L-30,0 M-24.1,-6.5 L-29,-7.8 M-21.7,-12.5 L-26,-15 M-17.7,-17.7 L-21.2,-21.2 M-12.5,-21.7 L-15,-26 M-6.5,-24.1 L-7.8,-29 M-0,-25 L-0,-30 M6.5,-24.1 L7.8,-29 M12.5,-21.7 L15,-26 M17.7,-17.7 L21.2,-21.2 M21.7,-12.5 L26,-15 M24.1,-6.5 L29,-7.8" stroke="#00f0ff" stroke-width=".9" opacity=".8" fill="none"/>
+<g class="spin" style="transform-origin:0px 0px"><path d="M38,0 A38,38 0 0 1 13,35.7 M-19,32.9 A38,38 0 0 1 -37.4,-6.6 M-19,-32.9 A38,38 0 0 1 24.4,-29.1" fill="none" stroke="#ff0055" stroke-width="2.4" filter="url(#glowS)"/></g>
+<polygon points="10.5,-18.2 21,0 10.5,18.2 -10.5,18.2 -21,0 -10.5,-18.2" fill="#ff0055" fill-opacity=".16" stroke="#ff0055" stroke-width="1.6" filter="url(#glowS)"/>
+<g class="spinf" style="transform-origin:0px 0px"><polygon points="4,0 17,0 10.9,13 2.6,3.1" fill="#ff0055" fill-opacity=".85"/><polygon points="-2,3.5 -8.5,14.7 -16.7,3 -3.9,0.7" fill="#ff0055" fill-opacity=".85"/><polygon points="-2,-3.5 -8.5,-14.7 5.8,-16 1.4,-3.8" fill="#ff0055" fill-opacity=".85"/></g>
+<polygon points="0,-7 7,0 0,7 -7,0" fill="#fff" class="pulse" filter="url(#glow)"/>
+</g>
+<path d="M-158,14 L-158,344 M-164,14 L-152,14 M-164,344 L-152,344" stroke="#00f0ff" stroke-width="1" fill="none" opacity=".8"/>
+<path d="M-161,47 L-155,47 M-161,80 L-155,80 M-161,113 L-155,113 M-161,146 L-155,146 M-161,179 L-155,179 M-161,212 L-155,212 M-161,245 L-155,245 M-161,278 L-155,278 M-161,311 L-155,311" stroke="#00f0ff" stroke-width=".8" opacity=".6"/>
+<text transform="translate(-166,260) rotate(-90)" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9" fill="#00f0ff" letter-spacing="1.5">H 1350 MM // M 30 KG</text>
+<polygon points="60,22.8 63.2,26 60,29.2 56.8,26" fill="#00f0ff"/>
+<path d="M60,26 L90,34 L146,34" fill="none" stroke="#00f0ff" stroke-width="1" opacity=".85"/>
+<text x="150" y="32" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#00f0ff" textLength="96" lengthAdjust="spacingAndGlyphs">ANT_R // SENSOR</text>
+<text x="150" y="44" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8.5" fill="#e8edf5" opacity=".7">RF 2.4GHZ // OMNI</text>
+<polygon points="21,108.8 24.2,112 21,115.2 17.8,112" fill="#00f0ff"/>
+<path d="M21,112 L51,112 L146,112" fill="none" stroke="#00f0ff" stroke-width="1" opacity=".85"/>
+<text x="150" y="110" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#00f0ff" textLength="109" lengthAdjust="spacingAndGlyphs">OPTIC x2 // IR+UV</text>
+<text x="150" y="122" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8.5" fill="#e8edf5" opacity=".7">TARGET LOCK ENABLED</text>
+<polygon points="34,222.8 37.2,226 34,229.2 30.8,226" fill="#ff0055"/>
+<path d="M34,226 L64,226 L146,226" fill="none" stroke="#ff0055" stroke-width="1" opacity=".85"/>
+<text x="150" y="224" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#ff0055" textLength="102" lengthAdjust="spacingAndGlyphs">CORE: 100,000 HP</text>
+<text x="150" y="236" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8.5" fill="#e8edf5" opacity=".7">OMEGA FACTOR // ONLINE</text>
+<polygon points="48,326.8 51.2,330 48,333.2 44.8,330" fill="#00ff66"/>
+<path d="M48,330 L78,322 L146,322" fill="none" stroke="#00ff66" stroke-width="1" opacity=".85"/>
+<text x="150" y="320" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#00ff66" textLength="109" lengthAdjust="spacingAndGlyphs">JET_BOOTS // 7.2G</text>
+<text x="150" y="332" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="8.5" fill="#e8edf5" opacity=".7">THRUST VECTOR STABLE</text>
+</g>
+<polygon points="51,28 306,28 306,45 299,52 44,52 44,35" fill="#ff0055" fill-opacity=".12" stroke="#ff0055" stroke-width="1.4"/>
+<text x="56" y="45" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" font-weight="700" fill="#ff0055" textLength="238" lengthAdjust="spacing">[ SEC_CLEARANCE: LEVEL_9 ]</text>
+<text x="322" y="45" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#00f0ff" letter-spacing="2">防衛システム</text>
+<text x="436" y="45" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" fill="#e8edf5" opacity=".55">// SYS.DEF.2026.11</text>
+<text x="46" y="80" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#e8edf5" letter-spacing="3">鉄腕アトム</text>
+<text x="146" y="80" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" fill="#e8edf5" opacity=".6" letter-spacing="2">// MIGHTY ATOM PROTOCOL</text>
+<g class="gl1"><text x="44" y="152" font-family="'Arial Black','Impact','Segoe UI Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="86" textLength="650" lengthAdjust="spacingAndGlyphs" fill="#ff0055">ANLI // ASTRO-SEC</text></g>
+<g class="gl2"><text x="44" y="152" font-family="'Arial Black','Impact','Segoe UI Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="86" textLength="650" lengthAdjust="spacingAndGlyphs" fill="#00f0ff">ANLI // ASTRO-SEC</text></g>
+<text x="44" y="152" font-family="'Arial Black','Impact','Segoe UI Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="86" textLength="650" lengthAdjust="spacingAndGlyphs" fill="url(#chrome)" stroke="#07080c" stroke-width=".6">ANLI <tspan fill="#ff0055">//</tspan> ASTRO-SEC</text>
+<text x="46" y="180" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#00f0ff" textLength="404" lengthAdjust="spacing"><tspan font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif">ゼロトラスト</tspan> // ZERO TRUST // SHIFT-LEFT</text>
+<rect x="458" y="167" width="9" height="15" fill="#00ff66" class="cur"/>
+<polygon points="52,198 190.2,198 190.2,218 182.2,226 44,226 44,206" fill="#ff0055" fill-opacity=".12" stroke="#ff0055" stroke-width="1.3"/>
+<text x="56" y="216" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#e8edf5" textLength="122.2" lengthAdjust="spacing">[ DEVSECOPS ]</text>
+<polygon points="210.2,198 498.8,198 498.8,218 490.8,226 202.2,226 202.2,206" fill="#00f0ff" fill-opacity=".12" stroke="#00f0ff" stroke-width="1.3"/>
+<text x="214.2" y="216" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#e8edf5" textLength="272.6" lengthAdjust="spacing">[ OFFENSIVE &amp; DEFENSIVE SEC ]</text>
+<polygon points="52,234 218.4,234 218.4,254 210.4,262 44,262 44,242" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-width="1.3"/>
+<text x="56" y="252" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#e8edf5" textLength="150.4" lengthAdjust="spacing">[ CLOUD NATIVE ]</text>
+<polygon points="238.4,234 498.8,234 498.8,254 490.8,262 230.4,262 230.4,242" fill="#e8edf5" fill-opacity=".12" stroke="#e8edf5" stroke-width="1.3"/>
+<text x="242.4" y="252" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#e8edf5" textLength="244.4" lengthAdjust="spacing">[ INFRASTRUCTURE AS CODE ]</text>
+<rect x="46" y="278" width="4" height="34" fill="#e8edf5" opacity=".85"/><rect x="52" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="57" y="278" width="4" height="34" fill="#e8edf5" opacity=".85"/><rect x="63" y="278" width="3" height="34" fill="#e8edf5" opacity=".85"/><rect x="68" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="71" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="74" y="278" width="3" height="34" fill="#e8edf5" opacity=".85"/><rect x="79" y="278" width="3" height="34" fill="#e8edf5" opacity=".85"/><rect x="85" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="89" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="92" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="95" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="99" y="278" width="3" height="34" fill="#e8edf5" opacity=".85"/><rect x="104" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="107" y="278" width="4" height="34" fill="#e8edf5" opacity=".85"/><rect x="114" y="278" width="3" height="34" fill="#e8edf5" opacity=".85"/><rect x="119" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="122" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="125" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="128" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="131" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="135" y="278" width="4" height="34" fill="#e8edf5" opacity=".85"/><rect x="142" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="145" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="148" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="152" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="156" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="159" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="163" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="167" y="278" width="4" height="34" fill="#e8edf5" opacity=".85"/><rect x="174" y="278" width="1" height="34" fill="#e8edf5" opacity=".85"/><rect x="178" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="182" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="186" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="190" y="278" width="2" height="34" fill="#e8edf5" opacity=".85"/><rect x="194" y="278" width="3" height="34" fill="#e8edf5" opacity=".85"/>
+<text x="212" y="290" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" fill="#00f0ff">35.6762°N  139.6503°E</text>
+<text x="212" y="303" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" fill="#e8edf5" opacity=".7">NODE 0xA70-M // DOB 2003-04-07</text>
+<text x="212" y="316" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" fill="#ff0055">SERIAL ATOM-0001 // ARMED</text>
+<text x="470" y="286" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#e8edf5" opacity=".75">REACTOR</text>
+<polygon points="551,278 558,278 558,284 555,287 548,287 548,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="564,278 571,278 571,284 568,287 561,287 561,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="577,278 584,278 584,284 581,287 574,287 574,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="590,278 597,278 597,284 594,287 587,287 587,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="603,278 610,278 610,284 607,287 600,287 600,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="616,278 623,278 623,284 620,287 613,287 613,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="629,278 636,278 636,284 633,287 626,287 626,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="642,278 649,278 649,284 646,287 639,287 639,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="655,278 662,278 662,284 659,287 652,287 652,281" fill="#ff0055" fill-opacity="1"/>
+<polygon points="668,278 675,278 675,284 672,287 665,287 665,281" fill="#ff0055" fill-opacity="1"/>
+<text x="684" y="286" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#ff0055">100%</text>
+<text x="470" y="298" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#e8edf5" opacity=".75">ZERO-TRUST</text>
+<polygon points="551,290 558,290 558,296 555,299 548,299 548,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="564,290 571,290 571,296 568,299 561,299 561,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="577,290 584,290 584,296 581,299 574,299 574,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="590,290 597,290 597,296 594,299 587,299 587,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="603,290 610,290 610,296 607,299 600,299 600,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="616,290 623,290 623,296 620,299 613,299 613,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="629,290 636,290 636,296 633,299 626,299 626,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="642,290 649,290 649,296 646,299 639,299 639,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="655,290 662,290 662,296 659,299 652,299 652,293" fill="#00f0ff" fill-opacity="1"/>
+<polygon points="668,290 675,290 675,296 672,299 665,299 665,293" fill="#00f0ff" fill-opacity="1"/>
+<text x="684" y="298" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#00f0ff">100%</text>
+<text x="470" y="310" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#e8edf5" opacity=".75">SIGNED</text>
+<polygon points="551,302 558,302 558,308 555,311 548,311 548,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="564,302 571,302 571,308 568,311 561,311 561,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="577,302 584,302 584,308 581,311 574,311 574,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="590,302 597,302 597,308 594,311 587,311 587,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="603,302 610,302 610,308 607,311 600,311 600,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="616,302 623,302 623,308 620,311 613,311 613,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="629,302 636,302 636,308 633,311 626,311 626,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="642,302 649,302 649,308 646,311 639,311 639,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="655,302 662,302 662,308 659,311 652,311 652,305" fill="#00ff66" fill-opacity="1"/>
+<polygon points="668,302 675,302 675,308 672,311 665,311 665,305" fill="#00ff66" fill-opacity="0.12"/>
+<text x="684" y="310" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#00ff66">90%</text>
+<rect x="12" y="326" width="718" height="20" fill="#11131a" stroke="#00f0ff" stroke-opacity=".3"/>
+<rect x="12" y="326" width="206" height="20" fill="url(#haz)"/>
+<rect x="218" y="326" width="2" height="20" fill="#ff0055"/>
+<g clip-path="url(#tk)"><g class="tick"><text x="226" y="340" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" fill="#00f0ff" textLength="520" lengthAdjust="spacing">SYSTEM ARMED  //  ZERO TRUST ENFORCED  //  SHIFT-LEFT  //  防衛システム  //  CORE 100,000 HP  //  SIGNED &amp; VERIFIED  //  </text><text x="746" y="340" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" fill="#00f0ff" textLength="520" lengthAdjust="spacing">SYSTEM ARMED  //  ZERO TRUST ENFORCED  //  SHIFT-LEFT  //  防衛システム  //  CORE 100,000 HP  //  SIGNED &amp; VERIFIED  //  </text></g></g>
+<text x="1178" y="56" writing-mode="vertical-rl" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-weight="900" font-size="22" fill="none" stroke="#e8edf5" stroke-width=".9" stroke-opacity=".6" letter-spacing="5">鉄腕アトム</text>
+<text x="1178" y="214" writing-mode="vertical-rl" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="9" fill="#ff0055" letter-spacing="3">ASTRO-CORE//ONLINE</text>
+<rect width="1200" height="360" fill="url(#scl)"/>
+<rect class="scan" x="0" y="0" width="1200" height="70" fill="url(#sweep)"/>
+<rect width="1200" height="360" fill="url(#vig)"/>
+</g>
+<path d="M24,10 L1176,10 L1190,24 L1190,336 L1176,350 L24,350 L10,336 L10,24 Z" fill="none" stroke="url(#edge)" stroke-width="2" class="neon"/>
+<path d="M24,18 L1176,18" stroke="#00f0ff" stroke-opacity=".25"/>
+<path d="M10,48 L10,34 L34,10 L48,10" fill="none" stroke="#ff0055" stroke-width="3"/>
+<path d="M1190,48 L1190,34 L1166,10 L1152,10" fill="none" stroke="#ff0055" stroke-width="3"/>
+<path d="M10,312 L10,326 L34,350 L48,350" fill="none" stroke="#ff0055" stroke-width="3"/>
+<path d="M1190,312 L1190,326 L1166,350 L1152,350" fill="none" stroke="#ff0055" stroke-width="3"/>
+</svg>

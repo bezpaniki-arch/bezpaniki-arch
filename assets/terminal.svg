@@ -1,16 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 372" width="900" height="372" role="img" aria-label="Терминал: Anli — инженер ИБ, разработчик, DevOps">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="Терминал: anli@astro-core, fastfetch и аудит пайплайна">
 <defs>
-<clipPath id="win"><rect x="2" y="2" width="896" height="368" rx="20"/></clipPath>
-<linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#0f1e66"/><stop offset="1" stop-color="#2744c9" stop-opacity=".6"/></linearGradient>
+<style>
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.55;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
+.spin{animation:spin 14s linear infinite}
+.spinr{animation:spin 22s linear infinite reverse}
+.spinf{animation:spin 5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scan{animation:scan 6s linear infinite}
+@keyframes scan{from{transform:translateY(-70px)}to{transform:translateY(430px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{50%{opacity:0}}
+.gl1{animation:gl1 4.5s steps(1) infinite}
+@keyframes gl1{0%,90%,100%{transform:translate(-4px,1px)}92%{transform:translate(-10px,-1px)}94%{transform:translate(3px,2px)}96%{transform:translate(-7px,0)}}
+.gl2{animation:gl2 4.5s steps(1) infinite}
+@keyframes gl2{0%,90%,100%{transform:translate(4px,-1px)}92%{transform:translate(10px,1px)}94%{transform:translate(-3px,-2px)}96%{transform:translate(7px,0)}}
+.tick{animation:tick 26s linear infinite}
+@keyframes tick{to{transform:translateX(-520px)}}
+.blip{animation:blip 2.4s steps(1) infinite}
+@keyframes blip{0%{opacity:1}50%{opacity:.5}}
+.flame{transform-box:fill-box;transform-origin:top center;animation:flame .25s steps(2) infinite}
+@keyframes flame{0%{transform:scaleY(1)}50%{transform:scaleY(1.7)}}
+.neon{animation:neon 3s ease-in-out infinite}
+@keyframes neon{0%,100%{stroke-opacity:.75}50%{stroke-opacity:1}}
+@media (prefers-reduced-motion:reduce){.pulse,.spin,.spinr,.spinf,.scan,.cur,.gl1,.gl2,.tick,.blip,.flame,.neon{animation:none}}
+</style>
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24,0 H0 V24" fill="none" stroke="#00f0ff" stroke-opacity=".06"/></pattern>
+<pattern id="scl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.3" fill="#000" fill-opacity=".28"/></pattern>
+<linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#ff0055"/><stop offset=".55" stop-color="#00f0ff"/><stop offset="1" stop-color="#00ff66"/></linearGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00f0ff" stop-opacity="0"/><stop offset=".5" stop-color="#00f0ff" stop-opacity=".10"/><stop offset="1" stop-color="#00f0ff" stop-opacity="0"/></linearGradient>
+<radialGradient id="wall" cx=".25" cy=".3" r=".8"><stop offset="0" stop-color="#ff0055" stop-opacity=".28"/><stop offset=".55" stop-color="#1a1030" stop-opacity=".5"/><stop offset="1" stop-color="#07080c" stop-opacity="0"/></radialGradient>
+<filter id="glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glowS" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="win"><polygon points="38,48 980,48 980,486 962,504 20,504 20,66"/></clipPath>
 </defs>
-<rect x="2" y="2" width="896" height="368" rx="20" fill="#0a1030" stroke="#2744c9" stroke-width="2"/>
+<rect width="1000" height="520" fill="#07080c"/>
+<rect width="1000" height="520" fill="url(#wall)"/>
+<rect width="1000" height="520" fill="url(#grid)"/>
+<polygon points="0,520 260,520 640,0 380,0" fill="#ff0055" opacity=".05"/>
+<polygon points="620,520 800,520 1000,200 1000,40" fill="#00f0ff" opacity=".04"/>
+<polygon points="29,8 980,8 980,29 971,38 20,38 20,17" fill="#11131a" fill-opacity=".95" stroke="#00f0ff" stroke-opacity=".4"/>
+<polygon points="37,14 54,14 54,27 49,32 32,32 32,19" fill="#ff0055" stroke="#ff0055" stroke-opacity="1"/>
+<text x="43" y="27" text-anchor="middle" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#e8edf5">一</text>
+<polygon points="65,14 82,14 82,27 77,32 60,32 60,19" fill="#11131a" stroke="#00f0ff" stroke-opacity="0.45"/>
+<text x="71" y="27" text-anchor="middle" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#00f0ff">二</text>
+<polygon points="93,14 110,14 110,27 105,32 88,32 88,19" fill="#11131a" stroke="#00f0ff" stroke-opacity="0.45"/>
+<text x="99" y="27" text-anchor="middle" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#00f0ff">三</text>
+<polygon points="121,14 138,14 138,27 133,32 116,32 116,19" fill="#11131a" stroke="#00f0ff" stroke-opacity="0.45"/>
+<text x="127" y="27" text-anchor="middle" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#00f0ff">四</text>
+<polygon points="149,14 166,14 166,27 161,32 144,32 144,19" fill="#11131a" stroke="#00f0ff" stroke-opacity="0.45"/>
+<text x="155" y="27" text-anchor="middle" font-family="'Yu Gothic','Meiryo','Hiragino Kaku Gothic ProN','Noto Sans CJK JP','Noto Sans JP',sans-serif" font-size="11" font-weight="700" fill="#00f0ff">五</text>
+<text x="500" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" fill="#e8edf5" opacity=".85">kitty — anli@astro-core:~</text>
+<text x="690" y="28" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#00ff66">WG0 ▲ UP</text>
+<text x="772" y="28" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#00f0ff">CPU 03%</text>
+<text x="840" y="28" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#00f0ff">MEM 2.1G</text>
+<text x="920" y="28" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#e8edf5">03:14</text>
+<polygon points="38,48 980,48 980,486 962,504 20,504 20,66" fill="#090b11" fill-opacity=".97"/>
 <g clip-path="url(#win)">
-<rect x="2" y="2" width="896" height="46" fill="url(#bar)"/>
-<line x1="2" y1="48" x2="898" y2="48" stroke="#2744c9" stroke-opacity=".7"/>
-<circle cx="30" cy="25" r="7" fill="#ff6f83"/><circle cx="54" cy="25" r="7" fill="#ffb3c0"/><circle cx="78" cy="25" r="7" fill="#ffe8d2"/>
-<text x="450.0" y="30" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#8fa6ff" opacity=".85">anli@sec — ~/bezpaniki-arch</text>
-<text x="34" y="98" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="96" lengthAdjust="spacing"><tspan fill="#ff6f83">$ </tspan><tspan fill="#ffe8d2">whoami</tspan></text><text x="34" y="134" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="504" lengthAdjust="spacing"><tspan fill="#ffe8d2">  </tspan><tspan fill="#ffb3c0">Anli</tspan><tspan fill="#8fa6ff"> · инженер ИБ · разработчик · DevOps</tspan></text><text x="34" y="170" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="180" lengthAdjust="spacing"><tspan fill="#ff6f83">$ </tspan><tspan fill="#ffe8d2">cat focus.txt</tspan></text><text x="34" y="206" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="528" lengthAdjust="spacing"><tspan fill="#ff6f83">  → </tspan><tspan fill="#8fa6ff">защита систем: от кода до инфраструктуры</tspan></text><text x="34" y="242" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="492" lengthAdjust="spacing"><tspan fill="#ff6f83">  → </tspan><tspan fill="#8fa6ff">автоматизация: CI/CD, IaC, контейнеры</tspan></text><text x="34" y="278" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="576" lengthAdjust="spacing"><tspan fill="#ff6f83">  → </tspan><tspan fill="#8fa6ff">безопасность по умолчанию, а не после релиза</tspan></text><text x="34" y="314" font-family="'JetBrains Mono','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="20" xml:space="preserve" style="white-space:pre" textLength="24" lengthAdjust="spacing"><tspan fill="#ff6f83">$ </tspan></text>
-<rect x="60" y="295" width="11" height="23" fill="#ff6f83"><animate attributeName="opacity" values="1;0;1" keyTimes="0;.5;1" dur="1s" repeatCount="indefinite"/></rect>
-<rect x="32" y="73" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;136;136" keyTimes="0;0.0350;0.0690;1" dur="20.0s" repeatCount="indefinite"/></rect><rect x="32" y="109" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;544;544" keyTimes="0;0.1190;0.2550;1" dur="20.0s" repeatCount="indefinite"/></rect><rect x="32" y="145" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;220;220" keyTimes="0;0.2725;0.3275;1" dur="20.0s" repeatCount="indefinite"/></rect><rect x="32" y="181" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;568;568" keyTimes="0;0.3775;0.5195;1" dur="20.0s" repeatCount="indefinite"/></rect><rect x="32" y="217" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;532;532" keyTimes="0;0.5370;0.6700;1" dur="20.0s" repeatCount="indefinite"/></rect><rect x="32" y="253" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;616;616" keyTimes="0;0.6875;0.8415;1" dur="20.0s" repeatCount="indefinite"/></rect><rect x="32" y="289" width="900" height="36" fill="#0a1030"><animate attributeName="x" values="32;32;64;64" keyTimes="0;0.8590;0.8750;1" dur="20.0s" repeatCount="indefinite"/></rect>
+<rect x="20" y="48" width="960" height="456" fill="url(#grid)"/>
+<rect x="20" y="48" width="960" height="28" fill="#11131a"/>
+<polygon points="36,53 198,53 198,67 192,73 30,73 30,59" fill="#ff0055" fill-opacity=".2" stroke="#ff0055" stroke-width="1.2"/>
+<text x="42" y="67" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#e8edf5">1: astro-core</text>
+<polygon points="212,53 336,53 336,67 330,73 206,73 206,59" fill="none" stroke="#00f0ff" stroke-opacity=".4"/>
+<text x="218" y="67" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#00f0ff" opacity=".8">2: pipeline</text>
+<polygon points="921,58 930,58 930,65 927,68 918,68 918,61" fill="#ff0055" opacity=".9"/>
+<polygon points="941,58 950,58 950,65 947,68 938,68 938,61" fill="#00f0ff" opacity=".9"/>
+<polygon points="961,58 970,58 970,65 967,68 958,68 958,61" fill="#00ff66" opacity=".9"/>
 </g>
+<text x="44" y="100" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">    <tspan fill="#ff0055">▄</tspan>                           <tspan fill="#ff0055">▄▄</tspan>   </text>
+<text x="44" y="112" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">  <tspan fill="#ff0055">▄███▄</tspan>                        <tspan fill="#ff0055">███▄</tspan>  </text>
+<text x="44" y="124" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing"> <tspan fill="#ff0055">▄█████▄</tspan>                     <tspan fill="#ff0055">▄█████▄</tspan> </text>
+<text x="44" y="136" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing"> <tspan fill="#ff0055">████████▄</tspan>                 <tspan fill="#ff0055">▄████████</tspan> </text>
+<text x="44" y="148" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing"> <tspan fill="#ff0055">██████████</tspan>               <tspan fill="#ff0055">▄█████████▄</tspan></text>
+<text x="44" y="160" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing"> <tspan fill="#ff0055">███████████▄▄▄▄▄▄█▄▄▄▄▄▄████████████</tspan></text>
+<text x="44" y="172" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing"> <tspan fill="#ff0055">███████████████████████████████████</tspan> </text>
+<text x="44" y="184" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing"> <tspan fill="#ff0055">▀██████████████████████████████████</tspan> </text>
+<text x="44" y="196" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">  <tspan fill="#ff0055">▀███████████████████████████████▀</tspan>  </text>
+<text x="44" y="208" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing" class="blip">    <tspan fill="#ff0055">▀███████████████████████████▀</tspan>    </text>
+<text x="44" y="220" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing" class="blip">      <tspan fill="#ff0055">▀███████████████████████▀</tspan>      </text>
+<text x="44" y="232" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">       <tspan fill="#00f0ff">▒▒▒▒</tspan><tspan fill="#e8edf5">█████</tspan><tspan fill="#00f0ff">▒▒▒▒▒</tspan><tspan fill="#e8edf5">█████</tspan><tspan fill="#00f0ff">▒▒▒▒</tspan>       </text>
+<text x="44" y="244" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">    <tspan fill="#00f0ff">▄▄▄▒▒▒▒</tspan><tspan fill="#e8edf5">██▀███</tspan><tspan fill="#00f0ff">▒▒▒▒</tspan><tspan fill="#e8edf5">██▀███</tspan><tspan fill="#00f0ff">▒▒▒▒▄▄</tspan>    </text>
+<text x="44" y="256" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">    <tspan fill="#00f0ff">▓▓▒▒▒▒</tspan><tspan fill="#e8edf5">██▀</tspan>  <tspan fill="#e8edf5">██</tspan><tspan fill="#00f0ff">▒▒▒</tspan><tspan fill="#e8edf5">██</tspan>   <tspan fill="#e8edf5">██</tspan><tspan fill="#00f0ff">▒▒▒▒▓▓</tspan>    </text>
+<text x="44" y="268" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">    <tspan fill="#00f0ff">▓▓</tspan> <tspan fill="#00f0ff">▒▒▒</tspan><tspan fill="#e8edf5">██▄</tspan>  <tspan fill="#e8edf5">██</tspan><tspan fill="#00f0ff">▒▒▒</tspan><tspan fill="#e8edf5">██</tspan>  <tspan fill="#e8edf5">▄██</tspan><tspan fill="#00f0ff">▒▒▒▀▓▓</tspan>    </text>
+<text x="44" y="280" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">    <tspan fill="#00f0ff">▀▀</tspan>  <tspan fill="#00f0ff">▒▒▒</tspan><tspan fill="#e8edf5">█████</tspan><tspan fill="#00f0ff">▒▒▒▒▒</tspan><tspan fill="#e8edf5">█████</tspan><tspan fill="#00f0ff">▒▒▒▀</tspan> <tspan fill="#00f0ff">▀▀</tspan>    </text>
+<text x="44" y="292" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">         <tspan fill="#00f0ff">▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀</tspan>        </text>
+<text x="44" y="304" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">          <tspan fill="#00f0ff">▒▒▒▒▒▒</tspan><tspan fill="#ff0055">█████</tspan><tspan fill="#00f0ff">▒▒▒▒▒▒▀</tspan>         </text>
+<text x="44" y="316" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">            <tspan fill="#00f0ff">▀▀▒▒▒▒▒▒▒▒▒▀▀</tspan>            </text>
+<text x="44" y="328" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">                <tspan fill="#00f0ff">▄▒▒▒▄</tspan>                </text>
+<text x="44" y="340" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">                <tspan fill="#00f0ff">░░░░░</tspan>                </text>
+<text x="44" y="352" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11" xml:space="preserve" style="white-space:pre" textLength="244.2" lengthAdjust="spacing">    <tspan fill="#00f0ff">▄▄▄▄▄▄▄▄▄░░░░░░░░░░░▄▄▄▄▄▄▄▄▄</tspan>    </text>
+<text x="330" y="106" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="17" font-weight="800"><tspan fill="#ff0055">anli</tspan><tspan fill="#e8edf5">@</tspan><tspan fill="#00f0ff">astro-core</tspan></text>
+<path d="M330,116 L670,116" stroke="url(#edge)" stroke-width="2"/>
+<polygon points="334,133 338,137 334,141 330,137" fill="#00f0ff"/>
+<text x="346" y="142" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="33.6" lengthAdjust="spacing">user</text>
+<text x="413.2" y="142" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#e8edf5" textLength="126" lengthAdjust="spacing">anli@astro-core</text>
+<polygon points="334,158 338,162 334,166 330,162" fill="#00f0ff"/>
+<text x="346" y="167" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="33.6" lengthAdjust="spacing">role</text>
+<text x="413.2" y="167" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#e8edf5" textLength="369.6" lengthAdjust="spacing">DevSecOps / AppSec / Cloud Security Engineer</text>
+<polygon points="334,183 338,187 334,191 330,187" fill="#00f0ff"/>
+<text x="346" y="192" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="16.8" lengthAdjust="spacing">os</text>
+<text x="413.2" y="192" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#e8edf5" textLength="294" lengthAdjust="spacing">Arch Linux x86_64 (Hardened Kernel)</text>
+<polygon points="334,208 338,212 334,216 330,212" fill="#00f0ff"/>
+<text x="346" y="217" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="42" lengthAdjust="spacing">heart</text>
+<text x="413.2" y="217" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#ff0055" textLength="285.6" lengthAdjust="spacing" class="blip">Omega Factor // 100,000 HP Reactor</text>
+<polygon points="334,233 338,237 334,241 330,237" fill="#00f0ff"/>
+<text x="346" y="242" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="42" lengthAdjust="spacing">style</text>
+<text x="413.2" y="242" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#e8edf5" textLength="378" lengthAdjust="spacing">Techwear / Cyber-Avant-Garde / Retro-Futurism</text>
+<polygon points="334,258 338,262 334,266 330,262" fill="#00f0ff"/>
+<text x="346" y="267" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="42" lengthAdjust="spacing">focus</text>
+<text x="413.2" y="267" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#e8edf5" textLength="495.6" lengthAdjust="spacing">Shift-Left Security, Zero-Trust Architecture, K8s Hardening</text>
+<polygon points="334,283 338,287 334,291 330,287" fill="#00f0ff"/>
+<text x="346" y="292" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700" fill="#00f0ff" textLength="16.8" lengthAdjust="spacing">wm</text>
+<text x="413.2" y="292" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" fill="#e8edf5" textLength="201.6" lengthAdjust="spacing">Hyprland // kitty // zsh</text>
+<polygon points="351,330 374,330 374,341 369,346 346,346 346,335" fill="#ff0055"/>
+<polygon points="385,330 408,330 408,341 403,346 380,346 380,335" fill="#ff5c8a"/>
+<polygon points="419,330 442,330 442,341 437,346 414,346 414,335" fill="#00f0ff"/>
+<polygon points="453,330 476,330 476,341 471,346 448,346 448,335" fill="#6cf7ff"/>
+<polygon points="487,330 510,330 510,341 505,346 482,346 482,335" fill="#00ff66"/>
+<polygon points="521,330 544,330 544,341 539,346 516,346 516,335" fill="#8dffb8"/>
+<polygon points="555,330 578,330 578,341 573,346 550,346 550,335" fill="#e8edf5"/>
+<polygon points="589,330 612,330 612,341 607,346 584,346 584,335" fill="#6c7a94"/>
+<path d="M44,372 L956,372" stroke="#00f0ff" stroke-opacity=".35" stroke-dasharray="4 4"/>
+<polygon points="49,364 232,364 232,375 227,380 44,380 44,369" fill="#090b11" stroke="#ff0055"/>
+<text x="56" y="376" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#ff0055" letter-spacing="2">PIPELINE AUDIT</text>
+<text x="44" y="402" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" opacity="0" textLength="361.2" lengthAdjust="spacing"><tspan fill="#ff0055" font-weight="700">[$]</tspan> <tspan fill="#e8edf5">scanning container layers with trivy...</tspan><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0667;0.1000;0.94;1" dur="12.0s" repeatCount="indefinite"/></text>
+<text x="489.2" y="402" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="800" fill="#00ff66" opacity="0" filter="url(#glowS)" textLength="168" lengthAdjust="spacing">[0 CRITICAL, 0 HIGH]<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1583;0.1833;0.94;1" dur="12.0s" repeatCount="indefinite"/></text>
+<text x="44" y="426" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" opacity="0" textLength="420" lengthAdjust="spacing"><tspan fill="#ff0055" font-weight="700">[$]</tspan> <tspan fill="#e8edf5">verifying cosign signatures &amp; vault secrets...</tspan><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.2167;0.2500;0.94;1" dur="12.0s" repeatCount="indefinite"/></text>
+<text x="489.2" y="426" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="800" fill="#00ff66" opacity="0" filter="url(#glowS)" textLength="84" lengthAdjust="spacing">[VERIFIED]<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3083;0.3333;0.94;1" dur="12.0s" repeatCount="indefinite"/></text>
+<text x="44" y="450" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" opacity="0" textLength="403.2" lengthAdjust="spacing"><tspan fill="#ff0055" font-weight="700">[$]</tspan> <tspan fill="#e8edf5">enforcing eBPF runtime policies via falco...</tspan><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3667;0.4000;0.94;1" dur="12.0s" repeatCount="indefinite"/></text>
+<text x="489.2" y="450" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="800" fill="#00ff66" opacity="0" filter="url(#glowS)" textLength="58.8" lengthAdjust="spacing">[ARMED]<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4583;0.4833;0.94;1" dur="12.0s" repeatCount="indefinite"/></text>
+<g opacity="0"><text x="44" y="478" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="14" font-weight="700"><tspan fill="#ff0055">anli</tspan><tspan fill="#e8edf5">@</tspan><tspan fill="#00f0ff">astro-core</tspan> <tspan fill="#00ff66">~/pipeline</tspan> <tspan fill="#ff0055">❯</tspan> <tspan fill="#e8edf5">exit 0 // all gates green</tspan></text><rect x="480.8" y="465" width="9" height="16" fill="#00ff66" class="cur"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5000;0.5333;0.94;1" dur="12.0s" repeatCount="indefinite"/></g>
+<g clip-path="url(#win)"><rect x="20" y="48" width="960" height="456" fill="url(#scl)"/><rect class="scan" x="20" y="48" width="960" height="60" fill="url(#sweep)"/></g>
+<polygon points="38,48 980,48 980,486 962,504 20,504 20,66" fill="none" stroke="url(#edge)" stroke-width="2.4" filter="url(#glow)" class="neon"/>
+<polygon points="40,54 974,54 974,484 960,498 26,498 26,68" fill="none" stroke="#00f0ff" stroke-opacity=".12"/>
 </svg>
