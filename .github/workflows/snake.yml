@@ -1,0 +1,31 @@
+name: Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Действия закреплены по SHA коммита (v3 / v3.1.0), чтобы тег нельзя было подменить.
+      - uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=#ff6f83&color_dots=#ebedf0,#ffd6dd,#ffb3c0,#ff6f83,#e2456a
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#ff6f83&color_dots=#161b22,#3a1b4a,#6b2a7a,#c04a8c,#ff6f83
+
+      - uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd # v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
